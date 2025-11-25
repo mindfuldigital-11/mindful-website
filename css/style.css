@@ -1102,4 +1102,58 @@ a:focus {
   .custom_nav-container .navbar-nav .nav-link { padding: 8px 10px; font-size: 14px; }
   .hero_area { padding-top: 65px; }
 }
+/* Make brand text smaller */
+.navbar-brand span {
+  font-size: 18px !important;
+  font-weight: 600;
+  color: #ffffff !important;
+}
+
+/* Keep navbar aligned properly on mobile and desktop */
+.custom_nav-container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-wrap: nowrap !important;
+}
+
+/* Prevent collapse from pushing nav to left */
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
+
+/* Fix mobile toggle alignment */
+@media (max-width: 991px) {
+  .navbar-toggler {
+    margin-left: auto !important;
+  }
+}
+/* Prevent navbar height from increasing when expanded */
+.header_section {
+  padding: 10px 0 !important;
+}
+
+/* Keep the top navbar height fixed */
+.navbar {
+  align-items: center !important;
+  min-height: 60px;
+}
+
+/* Make expanded menu drop BELOW navbar, instead of expanding it */
+.navbar-collapse {
+  position: absolute;
+  top: 60px; /* same as navbar height */
+  left: 0;
+  width: 100%;
+  background: #668642; /* your nav background */
+  padding: 10px 0;
+  z-index: 10;
+}
+
+/* Fix mobile only */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    position: absolute;
+  }
+}
 /*# sourceMappingURL=style.css.map */
