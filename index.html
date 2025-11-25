@@ -1,490 +1,887 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="">
 
-     <title>Health - Medical Website Template</title>
-<!--
+  <title> Mindful Rejuvenation </title>
 
-Template 2098 Health
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-http://www.tooplate.com/view/2098-health
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
--->
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-     <meta name="description" content="">
-     <meta name="keywords" content="">
-     <meta name="author" content="Tooplate">
-     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/font-awesome.min.css">
-     <link rel="stylesheet" href="css/animate.css">
-     <link rel="stylesheet" href="css/owl.carousel.css">
-     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
 
-     <!-- MAIN CSS -->
-     <link rel="stylesheet" href="css/tooplate-style.css">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
 
 </head>
-<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
-     <!-- PRE LOADER -->
-     <section class="preloader">
-          <div class="spinner">
+<body>
+   <!-- Floating Call & WhatsApp Buttons -->
+<div class="floating-buttons">
+  <a href="tel:+917306150312" class="call-btn">
+    <img src="images/call.png" alt="Call" />
+  </a>
 
-               <span class="spinner-rotate"></span>
-               
+  <a href="https://wa.me/917306150312" target="_blank" class="whatsapp-btn">
+    <img src="images/whatsapp.png" alt="WhatsApp" />
+  </a>
+</div>
+
+<style>
+  .floating-buttons {
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    z-index: 9999;
+  }
+
+  .floating-buttons a {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+    overflow: hidden;
+  }
+
+  .floating-buttons img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    pointer-events: none;
+  }
+
+  .floating-buttons a:hover {
+    transform: scale(1.08);
+    transition: 0.2s ease;
+  }
+</style>
+
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <img src="images/hero-bg.webp" alt="">
+    </div>
+
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="images/logo.png" alt="Mindful Rejuvenation" style="height: 45px; margin-right: 10px;">
+            <span>Mindful Rejuvenation</span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"> About</a>
+              <li class="nav-item">
+                <a class="nav-link" href="team.html">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+              <form class="form-inline">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+            </ul>
           </div>
-     </section>
+        </nav>
+      </div>
+    </header>
 
+    <!-- end header section -->
 
-     <!-- HEADER -->
-     <header>
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-md-4 col-sm-5">
-                         <p>Welcome to a Professional Health Care</p>
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                     Confidential Path to Mental Well-being
+                    </h1>
+                    <p>
+                      Mindful Rejuvenation provides a calm, supportive environment where individuals can confidentially discuss emotional and behavioural concerns with experienced mental health professionals. Our focus is on clear assessments, individualized guidance, and ongoing support.    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn1">
+                        Read More
+                      </a>
                     </div>
-                         
-                    <div class="col-md-8 col-sm-7 text-align-right">
-                         <span class="phone-icon"><i class="fa fa-phone"></i> 010-060-0160</span>
-                         <span class="date-icon"><i class="fa fa-calendar-plus-o"></i> 6:00 AM - 10:00 PM (Mon-Fri)</span>
-                         <span class="email-icon"><i class="fa fa-envelope-o"></i> <a href="#">info@company.com</a></span>
-                    </div>
-
-               </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-     </header>
-
-
-     <!-- MENU -->
-     <section class="navbar navbar-default navbar-static-top" role="navigation">
-          <div class="container">
-
-               <div class="navbar-header">
-                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                         <span class="icon icon-bar"></span>
-                         <span class="icon icon-bar"></span>
-                         <span class="icon icon-bar"></span>
-                    </button>
-
-                    <!-- lOGO TEXT HERE -->
-                    <a href="index.html" class="navbar-brand"><i class="fa fa-h-square"></i>ealth Center</a>
-               </div>
-
-               <!-- MENU LINKS -->
-               <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                         <li><a href="#top" class="smoothScroll">Home</a></li>
-                         <li><a href="#about" class="smoothScroll">About Us</a></li>
-                         <li><a href="#team" class="smoothScroll">Doctors</a></li>
-                         <li><a href="#news" class="smoothScroll">News</a></li>
-                         <li><a href="#google-map" class="smoothScroll">Contact</a></li>
-                         <li class="appointment-btn"><a href="#appointment">Make an appointment</a></li>
-                    </ul>
-               </div>
-
+          <div class="carousel-item ">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                      Clinical Psychology and Sustainable Mental Well-being
+                    </h1>
+                    <p>
+                     Our system is built on Integrating Psychiatry & Clinical Psychology to avoid fragmented treatment. This collaboration allows us to provide thorough assessment and immediate alignment of medical needs with therapeutic goals, guaranteeing efficient and Comprehensive Care that supports the patient's entire recovery journey
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn1">
+                        Read More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-     </section>
-
-
-     <!-- HOME -->
-     <section id="home" class="slider" data-stellar-background-ratio="0.5">
-          <div class="container">
-               <div class="row">
-
-                         <div class="owl-carousel owl-theme">
-                              <div class="item item-first">
-                                   <div class="caption">
-                                        <div class="col-md-offset-1 col-md-10">
-                                             <h3>Let's make your life happier</h3>
-                                             <h1>Healthy Living</h1>
-                                             <a href="#team" class="section-btn btn btn-default smoothScroll">Meet Our Doctors</a>
-                                        </div>
-                                   </div>
-                              </div>
-
-                              <div class="item item-second">
-                                   <div class="caption">
-                                        <div class="col-md-offset-1 col-md-10">
-                                             <h3>Aenean luctus lobortis tellus</h3>
-                                             <h1>New Lifestyle</h1>
-                                             <a href="#about" class="section-btn btn btn-default btn-gray smoothScroll">More About Us</a>
-                                        </div>
-                                   </div>
-                              </div>
-
-                              <div class="item item-third">
-                                   <div class="caption">
-                                        <div class="col-md-offset-1 col-md-10">
-                                             <h3>Pellentesque nec libero nisi</h3>
-                                             <h1>Your Health Benefits</h1>
-                                             <a href="#news" class="section-btn btn btn-default btn-blue smoothScroll">Read Stories</a>
-                                        </div>
-                                   </div>
-                              </div>
-                         </div>
-
-               </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                     Comprehensive Care for Psychiatry
+                    </h1>
+                    <p>
+                    Structured Clinical Psychology provides a reliable, evidence-based foundation for your recovery. This approach involves systematic assessment and the application of well-defined therapeutic modalities (like CBT and DBT) to ensure lasting change. We focus on building skills and insights that lead directly to Sustainable Mental Well-being long after your treatment concludes.
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn1">
+                        Read More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-     </section>
+        </div>
+        <ol class="carousel-indicators">
+          <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+          <li data-target="#customCarousel1" data-slide-to="1"></li>
+          <li data-target="#customCarousel1" data-slide-to="2"></li>
+        </ol>
+      </div>
+
+    </section>
+    <!-- end slider section -->
+  </div>
 
 
-     <!-- ABOUT -->
-     <section id="about">
-          <div class="container">
-               <div class="row">
+  <!-- department section -->
 
-                    <div class="col-md-6 col-sm-6">
-                         <div class="about-info">
-                              <h2 class="wow fadeInUp" data-wow-delay="0.6s">Welcome to Your <i class="fa fa-h-square"></i>ealth Center</h2>
-                              <div class="wow fadeInUp" data-wow-delay="0.8s">
-                                   <p>Aenean luctus lobortis tellus, vel ornare enim molestie condimentum. Curabitur lacinia nisi vitae velit volutpat venenatis.</p>
-                                   <p>Sed a dignissim lacus. Quisque fermentum est non orci commodo, a luctus urna mattis. Ut placerat, diam a tempus vehicula.</p>
-                              </div>
-                              <figure class="profile wow fadeInUp" data-wow-delay="1s">
-                                   <img src="images/author-image.jpg" class="img-responsive" alt="">
-                                   <figcaption>
-                                        <h3>Dr. Neil Jackson</h3>
-                                        <p>General Principal</p>
-                                   </figcaption>
-                              </figure>
-                         </div>
-                    </div>
-                    
-               </div>
+  <section class="department_section layout_padding">
+    <div class="department_container">
+      <div class="container ">
+        <div class="heading_container heading_center">
+          <h2>
+            Our Specialties
+          </h2>
+          <p>
+            The integrated approach of Consultant Psychiatrists, Clinical Psychologists, and Counselors working together is a significant specialty differentiator.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/1.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                   5000+
+                   <br>
+                   Patients Treated                
+                  </h5>
+                <p>
+                  Providing compassionate, specialized psychiatric care for over 5000 families in Kerala.
+                </p>
+              </div>
+            </div>
           </div>
-     </section>
-
-
-     <!-- TEAM -->
-     <section id="team" data-stellar-background-ratio="1">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-md-6 col-sm-6">
-                         <div class="about-info">
-                              <h2 class="wow fadeInUp" data-wow-delay="0.1s">Our Doctors</h2>
-                         </div>
-                    </div>
-
-                    <div class="clearfix"></div>
-
-                    <div class="col-md-4 col-sm-6">
-                         <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
-                              <img src="images/team-image1.jpg" class="img-responsive" alt="">
-
-                                   <div class="team-info">
-                                        <h3>Nate Baston</h3>
-                                        <p>General Principal</p>
-                                        <div class="team-contact-info">
-                                             <p><i class="fa fa-phone"></i> 010-020-0120</p>
-                                             <p><i class="fa fa-envelope-o"></i> <a href="#">general@company.com</a></p>
-                                        </div>
-                                        <ul class="social-icon">
-                                             <li><a href="#" class="fa fa-linkedin-square"></a></li>
-                                             <li><a href="#" class="fa fa-envelope-o"></a></li>
-                                        </ul>
-                                   </div>
-
-                         </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6">
-                         <div class="team-thumb wow fadeInUp" data-wow-delay="0.4s">
-                              <img src="images/team-image2.jpg" class="img-responsive" alt="">
-
-                                   <div class="team-info">
-                                        <h3>Jason Stewart</h3>
-                                        <p>Pregnancy</p>
-                                        <div class="team-contact-info">
-                                             <p><i class="fa fa-phone"></i> 010-070-0170</p>
-                                             <p><i class="fa fa-envelope-o"></i> <a href="#">pregnancy@company.com</a></p>
-                                        </div>
-                                        <ul class="social-icon">
-                                             <li><a href="#" class="fa fa-facebook-square"></a></li>
-                                             <li><a href="#" class="fa fa-envelope-o"></a></li>
-                                             <li><a href="#" class="fa fa-flickr"></a></li>
-                                        </ul>
-                                   </div>
-
-                         </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6">
-                         <div class="team-thumb wow fadeInUp" data-wow-delay="0.6s">
-                              <img src="images/team-image3.jpg" class="img-responsive" alt="">
-
-                                   <div class="team-info">
-                                        <h3>Miasha Nakahara</h3>
-                                        <p>Cardiology</p>
-                                        <div class="team-contact-info">
-                                             <p><i class="fa fa-phone"></i> 010-040-0140</p>
-                                             <p><i class="fa fa-envelope-o"></i> <a href="#">cardio@company.com</a></p>
-                                        </div>
-                                        <ul class="social-icon">
-                                             <li><a href="#" class="fa fa-twitter"></a></li>
-                                             <li><a href="#" class="fa fa-envelope-o"></a></li>
-                                        </ul>
-                                   </div>
-
-                         </div>
-                    </div>
-                    
-               </div>
+          <div class="col-md-3">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/2.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  24/7
+                   <br>
+                   Clinical Monitoring
+                </h5>
+                <p>
+                  Access consistent care. Our hospitals provide 24-hour monitoring for safe, supported care.
+                </p>
+              </div>
+            </div>
           </div>
-     </section>
-
-
-     <!-- NEWS -->
-     <section id="news" data-stellar-background-ratio="2.5">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-md-12 col-sm-12">
-                         <!-- SECTION TITLE -->
-                         <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-                              <h2>Latest News</h2>
-                         </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6">
-                         <!-- NEWS THUMB -->
-                         <div class="news-thumb wow fadeInUp" data-wow-delay="0.4s">
-                              <a href="news-detail.html">
-                                   <img src="images/news-image1.jpg" class="img-responsive" alt="">
-                              </a>
-                              <div class="news-info">
-                                   <span>March 08, 2018</span>
-                                   <h3><a href="news-detail.html">About Amazing Technology</a></h3>
-                                   <p>Maecenas risus neque, placerat volutpat tempor ut, vehicula et felis.</p>
-                                   <div class="author">
-                                        <img src="images/author-image.jpg" class="img-responsive" alt="">
-                                        <div class="author-info">
-                                             <h5>Jeremie Carlson</h5>
-                                             <p>CEO / Founder</p>
-                                        </div>
-                                   </div>
-                              </div>
-                         </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6">
-                         <!-- NEWS THUMB -->
-                         <div class="news-thumb wow fadeInUp" data-wow-delay="0.6s">
-                              <a href="news-detail.html">
-                                   <img src="images/news-image2.jpg" class="img-responsive" alt="">
-                              </a>
-                              <div class="news-info">
-                                   <span>February 20, 2018</span>
-                                   <h3><a href="news-detail.html">Introducing a new healing process</a></h3>
-                                   <p>Fusce vel sem finibus, rhoncus massa non, aliquam velit. Nam et est ligula.</p>
-                                   <div class="author">
-                                        <img src="images/author-image.jpg" class="img-responsive" alt="">
-                                        <div class="author-info">
-                                             <h5>Jason Stewart</h5>
-                                             <p>General Director</p>
-                                        </div>
-                                   </div>
-                              </div>
-                         </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6">
-                         <!-- NEWS THUMB -->
-                         <div class="news-thumb wow fadeInUp" data-wow-delay="0.8s">
-                              <a href="news-detail.html">
-                                   <img src="images/news-image3.jpg" class="img-responsive" alt="">
-                              </a>
-                              <div class="news-info">
-                                   <span>January 27, 2018</span>
-                                   <h3><a href="news-detail.html">Review Annual Medical Research</a></h3>
-                                   <p>Vivamus non nulla semper diam cursus maximus. Pellentesque dignissim.</p>
-                                   <div class="author">
-                                        <img src="images/author-image.jpg" class="img-responsive" alt="">
-                                        <div class="author-info">
-                                             <h5>Andrio Abero</h5>
-                                             <p>Online Advertising</p>
-                                        </div>
-                                   </div>
-                              </div>
-                         </div>
-                    </div>
-
-               </div>
+          <div class="col-md-3">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/3.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  15+
+                  <br>
+                Years Experience
+                </h5>
+                <p>
+                  Providing specialized mental health support and long-term recovery strategies since 2010.
+                </p>
+              </div>
+            </div>
           </div>
-     </section>
-
-
-     <!-- MAKE AN APPOINTMENT -->
-     <section id="appointment" data-stellar-background-ratio="3">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-md-6 col-sm-6">
-                         <img src="images/appointment-image.jpg" class="img-responsive" alt="">
-                    </div>
-
-                    <div class="col-md-6 col-sm-6">
-                         <!-- CONTACT FORM HERE -->
-                         <form id="appointment-form" role="form" method="post" action="#">
-
-                              <!-- SECTION TITLE -->
-                              <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
-                                   <h2>Make an appointment</h2>
-                              </div>
-
-                              <div class="wow fadeInUp" data-wow-delay="0.8s">
-                                   <div class="col-md-6 col-sm-6">
-                                        <label for="name">Name</label>
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="Full Name">
-                                   </div>
-
-                                   <div class="col-md-6 col-sm-6">
-                                        <label for="email">Email</label>
-                                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
-                                   </div>
-
-                                   <div class="col-md-6 col-sm-6">
-                                        <label for="date">Select Date</label>
-                                        <input type="date" name="date" value="" class="form-control">
-                                   </div>
-
-                                   <div class="col-md-6 col-sm-6">
-                                        <label for="select">Select Department</label>
-                                        <select class="form-control">
-                                             <option>General Health</option>
-                                             <option>Cardiology</option>
-                                             <option>Dental</option>
-                                             <option>Medical Research</option>
-                                        </select>
-                                   </div>
-
-                                   <div class="col-md-12 col-sm-12">
-                                        <label for="telephone">Phone Number</label>
-                                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone">
-                                        <label for="Message">Additional Message</label>
-                                        <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message"></textarea>
-                                        <button type="submit" class="form-control" id="cf-submit" name="submit">Submit Button</button>
-                                   </div>
-                              </div>
-                        </form>
-                    </div>
-
-               </div>
+          <div class="col-md-3">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/4.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  100%
+                    <br>
+                    Confidential Care
+                </h5>
+                <p>
+                  Your path to recovery is completely private. Experienced care in a 100% confidential setting.
+                </p>
+              </div>
+            </div>
           </div>
-     </section>
+        </div>
+        <div class="btn-box">
+          <a href="">
+            View All
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- end department section -->
 
-     <!-- GOOGLE MAP -->
-     <section id="google-map">
-     <!-- How to change your own map point
-            1. Go to Google Maps
-            2. Click on your location point
-            3. Click "Share" and choose "Embed map" tab
-            4. Copy only URL and paste it within the src="" field below
-	-->
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.3030413476204!2d100.5641230193719!3d13.757206847615207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf51ce6427b7918fc!2sG+Tower!5e0!3m2!1sen!2sth!4v1510722015945" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-     </section>           
+  <!-- about section -->
 
-
-     <!-- FOOTER -->
-     <footer data-stellar-background-ratio="5">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-md-4 col-sm-4">
-                         <div class="footer-thumb"> 
-                              <h4 class="wow fadeInUp" data-wow-delay="0.4s">Contact Info</h4>
-                              <p>Fusce at libero iaculis, venenatis augue quis, pharetra lorem. Curabitur ut dolor eu elit consequat ultricies.</p>
-
-                              <div class="contact-info">
-                                   <p><i class="fa fa-phone"></i> 010-070-0170</p>
-                                   <p><i class="fa fa-envelope-o"></i> <a href="#">info@company.com</a></p>
-                              </div>
-                         </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-4"> 
-                         <div class="footer-thumb"> 
-                              <h4 class="wow fadeInUp" data-wow-delay="0.4s">Latest News</h4>
-                              <div class="latest-stories">
-                                   <div class="stories-image">
-                                        <a href="#"><img src="images/news-image.jpg" class="img-responsive" alt=""></a>
-                                   </div>
-                                   <div class="stories-info">
-                                        <a href="#"><h5>Amazing Technology</h5></a>
-                                        <span>March 08, 2018</span>
-                                   </div>
-                              </div>
-
-                              <div class="latest-stories">
-                                   <div class="stories-image">
-                                        <a href="#"><img src="images/news-image.jpg" class="img-responsive" alt=""></a>
-                                   </div>
-                                   <div class="stories-info">
-                                        <a href="#"><h5>New Healing Process</h5></a>
-                                        <span>February 20, 2018</span>
-                                   </div>
-                              </div>
-                         </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-4"> 
-                         <div class="footer-thumb">
-                              <div class="opening-hours">
-                                   <h4 class="wow fadeInUp" data-wow-delay="0.4s">Opening Hours</h4>
-                                   <p>Monday - Friday <span>06:00 AM - 10:00 PM</span></p>
-                                   <p>Saturday <span>09:00 AM - 08:00 PM</span></p>
-                                   <p>Sunday <span>Closed</span></p>
-                              </div> 
-
-                              <ul class="social-icon">
-                                   <li><a href="https://www.facebook.com/tooplate" class="fa fa-facebook-square" attr="facebook icon"></a></li>
-                                   <li><a href="#" class="fa fa-twitter"></a></li>
-                                   <li><a href="#" class="fa fa-instagram"></a></li>
-                              </ul>
-                         </div>
-                    </div>
-
-                    <div class="col-md-12 col-sm-12 border-top">
-                         <div class="col-md-4 col-sm-6">
-                              <div class="copyright-text"> 
-                                   <p>Copyright &copy; 2017 Your Company 
-                                   
-                                   | Design: <a href="http://www.tooplate.com" target="_parent">Tooplate</a></p>
-                              </div>
-                         </div>
-                         <div class="col-md-6 col-sm-6">
-                              <div class="footer-link"> 
-                                   <a href="#">Laboratory Tests</a>
-                                   <a href="#">Departments</a>
-                                   <a href="#">Insurance Policy</a>
-                                   <a href="#">Careers</a>
-                              </div>
-                         </div>
-                         <div class="col-md-2 col-sm-2 text-align-center">
-                              <div class="angle-up-btn"> 
-                                  <a href="#top" class="smoothScroll wow fadeInUp" data-wow-delay="1.2s"><i class="fa fa-angle-up"></i></a>
-                              </div>
-                         </div>   
-                    </div>
-                    
-               </div>
+  <section class="about_section layout_margin-bottom">
+    <div class="container  ">
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="images/about-img.png" alt="">
           </div>
-     </footer>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                About <span>Us</span>
+              </h2>
+            </div>
+            <p>
+              Mindful Rejuvenation is a leading, licensed mental health provider in Kerala, operating specialized psychiatric hospitals and mental wellness clinics across Kochi, Angamaly, and Kaloor. The organization is built on a multidisciplinary model to provide comprehensive, evidence-based care.
+            </p>
+            <a href="about.html">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-     <!-- SCRIPTS -->
-     <script src="js/jquery.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-     <script src="js/jquery.sticky.js"></script>
-     <script src="js/jquery.stellar.min.js"></script>
-     <script src="js/wow.min.js"></script>
-     <script src="js/smoothscroll.js"></script>
-     <script src="js/owl.carousel.min.js"></script>
-     <script src="js/custom.js"></script>
+  <!-- end about section -->
+
+ <!-- Comprehensive Mental Health Services section -->
+<section id="comprehensive-services" class="services-section">
+  <div class="container">
+    <header class="services-header">
+      <h2>Comprehensive Mental Health Services</h2>
+      <p>Complete, evidence-based mental health care for children, adults and families.</p>
+    </header>
+
+    <div class="services-grid">
+
+      <!-- 1 -->
+      <article class="service-card">
+        <img src="images/Psychiatric Consultation.png" alt="" />
+        <div class="service-body">
+          <h3>Psychiatric Consultation</h3>
+          <p>Detailed clinical evaluation to understand symptoms, leading to expert guidance and individualized care planning.</p>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="service-card">
+        <img src="images/Psychiatry Admissions.png" alt="" />
+        <div class="service-body">
+          <h3>Psychiatry Admissions</h3>
+          <p>Structured, supportive environment with 24/7 clinical monitoring for stabilization and comprehensive initial assessment.</p>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="service-card">
+        <img src="images/Behavioral Assessment.png" alt="" />
+        <div class="service-body">
+          <h3>Behavioral Assessment</h3>
+          <p>A detailed evaluation to understand behavioral patterns, triggers, and psychological factors necessary for accurate diagnosis and management.</p>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="service-card">
+        <img src="images/Supportive Psychotherapy.png" alt="" />
+        <div class="service-body">
+          <h3>Supportive Psychotherapy</h3>
+          <p>Therapy focused on addressing current symptoms and immediate issues, enhancing coping skills, and boosting self-esteem in a safe setting.</p>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="service-card">
+        <img src="images/Recovery & Impulse Control Therapy.png" alt="" />
+        <div class="service-body">
+          <h3>Recovery & Impulse Control Therapy</h3>
+          <p>Specialized therapy focused on identifying triggers, developing coping skills, and building emotional resilience to gain long-term control over impulsive urges.</p>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="service-card">
+        <img src="images/Stress Management.png" alt="" />
+        <div class="service-body">
+          <h3>Stress Management</h3>
+          <p>Skill-building sessions to manage daily pressures, improve time management, and foster a balanced, sustainable lifestyle.</p>
+        </div>
+      </article>
+
+      <!-- 7 -->
+      <article class="service-card">
+        <img src="images/Individual Counselling.png" alt="" />
+        <div class="service-body">
+          <h3>Individual Counselling</h3>
+          <p>Confidential, supportive sessions with a dedicated counsellor to address personal issues, anxiety, relationship concerns, and coping skills.</p>
+        </div>
+      </article>
+
+      <!-- 8 -->
+      <article class="service-card">
+        <img src="images/Dementia Care Support.png" alt="" />
+        <div class="service-body">
+          <h3>Dementia Care Support</h3>
+          <p>Specialized assessment and intervention focused on maximizing cognitive well-being and enhancing quality of life for individuals with dementia.</p>
+        </div>
+      </article>
+
+      <!-- 9 -->
+      <article class="service-card">
+        <img src="images/Cognitive Behavioural Therapy.png" alt="" />
+        <div class="service-body">
+          <h3>Cognitive Behavioural Therapy</h3>
+          <p>Structured, evidence-based therapy focused on identifying and modifying unhelpful thought patterns to change emotional responses and behaviors.</p>
+        </div>
+      </article>
+
+      <!-- 10 -->
+      <article class="service-card">
+        <img src="images/Dialectical Behaviour Therapy.png" alt="" />
+        <div class="service-body">
+          <h3>Dialectical Behaviour Therapy</h3>
+          <p>Evidence-based therapy that integrates acceptance with change strategies to help patients manage intense emotions and build a life worth living.</p>
+        </div>
+      </article>
+
+      <!-- 11 -->
+      <article class="service-card">
+        <img src="images/Telepsychiatry & Remote Consultations.png" alt="" />
+        <div class="service-body">
+          <h3>Telepsychiatry & Remote Consultations</h3>
+          <p>Secure, remote appointments with our Psychiatrists for consultation, follow-up, and medication management from your location.</p>
+        </div>
+      </article>
+
+      <!-- 12 -->
+      <article class="service-card">
+        <img src="images/Family Therapy.png" alt="" />
+        <div class="service-body">
+          <h3>Family Therapy</h3>
+          <p>Supportive sessions designed to help families understand a loved one's recovery process and build healthier, more effective interactions.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Styles -->
+<style>
+  :root{
+    --accent:#2b6cb0;
+    --muted:#64748b;
+    --bg:#ffffff;
+    --card-bg:#fbfcff;
+    --radius:12px;
+  }
+
+  .services-section{
+    padding:48px 16px;
+    background:var(--bg);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color:#111827;
+  }
+
+  .container{
+    max-width:1100px;
+    margin:0 auto;
+  }
+
+  .services-header{
+    text-align:center;
+    margin-bottom:28px;
+  }
+  .services-header h2{
+    font-size:28px;
+    margin:0 0 8px;
+  }
+  .services-header p{
+    margin:0;
+    color:var(--muted);
+  }
+
+  .services-grid{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:18px;
+  }
+
+  .service-card{
+    display:flex;
+    gap:18px;
+    align-items:center;
+    padding:16px;
+    border-radius:var(--radius);
+    background:var(--card-bg);
+    box-shadow: 0 6px 18px rgba(16,24,40,0.04);
+  }
+
+  .service-card img{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:10px;
+    flex-shrink:0;
+    background:#e6eefc;
+  }
+
+  .service-body h3{
+    margin:0 0 6px;
+    font-size:18px;
+  }
+  .service-body p{
+    margin:0;
+    color:var(--muted);
+    line-height:1.45;
+    font-size:14px;
+  }
+
+  @media (min-width:768px){
+    .services-grid{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width:1100px){
+    .services-grid{
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .service-card{
+      flex-direction:column;
+      text-align:center;
+      padding:20px;
+    }
+    .service-card img{
+      width:140px;
+      height:140px;
+      margin-bottom:12px;
+    }
+  }
+</style>
+
+
+  <!-- doctor section -->
+
+  <section class="doctor_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          The Team Behind Mindful Rejuvenation
+        </h2>
+        <p class="col-md-10 mx-auto px-0">
+          Mindful Rejuvenation offers 15+ years of trusted, specialized psychiatric care. We guarantee 100% confidential support with 24/7 clinical monitoring for individualized recovery across our Kerala hospitals.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-lg-4 mx-auto">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/d1.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Dr. Evelyn George
+              </h5>
+              <h6 class="">
+                Consultant Psychiatrist
+                <br>
+                MBBS, MD
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mx-auto">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/d2.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Dr. Geo George
+              </h5>
+              <h6 class="">
+                Consultant Psychiatrist
+                <br>
+                MBBS, MD
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mx-auto">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/d3.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Dr. Thomas Mathai
+              </h5>
+              <h6 class="">
+                Consultant Psychiatrist
+               <br>
+                MBBS, DPM, DNB
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-box">
+        <a href="team.html">
+          View All
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- end doctor section -->
+
+  <!-- contact section -->
+  <section class="contact_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Get In Touch
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form_container contact-form">
+            <form action="">
+              <div class="form-row">
+                <div class="col-lg-6">
+                  <div>
+                    <input type="text" placeholder="Your Name" />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div>
+                    <input type="text" placeholder="Phone Number" />
+                  </div>
+                </div>
+              </div>
+              <div>
+                <input type="email" placeholder="Email" />
+              </div>
+              <div>
+                <input type="text" class="message-box" placeholder="Message" />
+              </div>
+              <div class="btn_box">
+                <button>
+                  SEND
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="map_container">
+            <div class="map">
+              <div id="Google map"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end contact section -->
+
+  <!-- client section -->
+
+  <section class="client_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container heading_center ">
+        <h2>
+          Testimonial
+        </h2>
+      </div>
+      <div id="carouselExample2Controls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-11 col-lg-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="images/user.png" alt="" />
+                  </div>
+                  <div class="detail-box">
+                    <div class="name">
+                      <h6>
+                        Anju V
+                      </h6>
+                    </div>
+                    <p>
+                      Choosing Mindful Rejuvenation was the turning point for my family. The psychiatrists and therapists developed an individualized plan that truly addressed my specific needs, unlike previous attempts at other facilities. I felt genuinely heard, and the evidence-based therapies they used made a real difference in my recovery. They are true experts
+                    </p>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-11 col-lg-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="images/user.png" alt="" />
+                  </div>
+                  <div class="detail-box">
+                    <div class="name">
+                      <h6>
+                        Ravi P
+                      </h6>
+                    </div>
+                    <p>
+I was initially very anxious about seeking help, but the staff immediately put me at ease. The promise of 100% confidential care is real—the environment is safe, stigma-free, and respectful. The facility is comfortable, and the 24/7 monitoring gave my family peace of mind. Highly recommend their professional team.
+                    </p>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-11 col-lg-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="images/user.png" alt="" />
+                  </div>
+                  <div class="detail-box">
+                    <div class="name">
+                      <h6>
+                        Fathima K
+                      </h6>
+                    </div>
+                    <p>
+                      The multidisciplinary team approach here is incredible. I benefited from sessions with both the consultant psychiatrist and the clinical psychologist, which made the treatment feel complete. After 15+ years of experience in the region, they know what works. I am now back to a stable routine thanks to their focused, long-term support.
+                    </p>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel_btn-container">
+          <a class="carousel-control-prev" href="#carouselExample2Controls" role="button" data-slide="prev">
+            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExample2Controls" role="button" data-slide="next">
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end client section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 footer_col">
+          <div class="footer_contact">
+            <h4>
+              Reach at..
+            </h4>
+            <div class="contact_link_box">
+              <a href="https://share.google/ZYdj2mEkmSM7tGNGU">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Location
+                </span>
+              </a>
+              <a href="tel:07306150312">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call +91 90378 99299, +91 73061 50312
+                </span>
+              </a>
+              <a href="'tel:07306150312'">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  help@mindfulrejuvenation.in
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="footer_social">
+            <a href="https://www.facebook.com/mindfulrejuvenation">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://in.linkedin.com/company/mindful-rejuvenation">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/mindfulrejuvenation.in/">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 footer_col">
+          <div class="footer_detail">
+            <h4>
+              About
+            </h4>
+            <p>
+              Kerala's leading specialized psychiatric hospital. We offer individualized treatment and 24/7 clinical monitoring at our      Kochi and Angamaly facilities.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2 mx-auto footer_col">
+          <div class="footer_link_box">
+            <h4>
+              Links
+            </h4>
+            <div class="footer_links">
+              <a class="active" href="index.html">
+                Home
+              </a>
+              <a class="" href="about.html">
+                About
+              </a>
+              <a class="" href="team.html">
+                Team
+              </a>
+              <a class="" href="contact.html">
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 footer_col ">
+          <h4>
+            Subscribe
+          </h4>
+          <form action="#">
+            <input type="email" placeholder="Enter Email" />
+            <button type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-info">
+        <p>
+          &copy; <span id="displayYear"></span> [Privacy Policy] | [Terms of Service & Disclaimer] |
+          <a href="https://html.design/">Mindful Rejuvenation Healthcare Pvt Ltd<br><br></a>
+            &copy; <span id="displayYear"></span> Distributed By
+            <a href="">Zstudios</a>
+        </p>
+       
+      </div>  
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
 
 </body>
+
 </html>
