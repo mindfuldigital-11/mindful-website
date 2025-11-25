@@ -1220,3 +1220,44 @@ a:focus {
 @media (max-width: 768px) {
   .footer_section .row { text-align: center !important; }
 }
+/* DESKTOP NAVBAR FIX */
+@media (min-width: 992px) {
+  .header_section .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .custom_nav-container .navbar-nav {
+    margin-left: auto !important;
+  }
+
+  .navbar-brand span {
+    font-size: 20px !important;
+  }
+
+  .navbar-collapse {
+    position: static !important;
+    width: auto !important;
+    background: none !important;
+    padding: 0 !important;
+  }
+}
+/* ABOUT PAGE MOBILE FIX */
+@media (max-width: 768px) {
+  .about_section .detail-box {
+    text-align: center !important;
+  }
+
+  .about_section .img-box {
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 20px;
+  }
+
+  .about_section .img-box img {
+    width: 90% !important;
+    border-radius: 12px;
+  }
+}
+
