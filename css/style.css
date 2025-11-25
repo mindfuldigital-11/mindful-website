@@ -1281,7 +1281,7 @@ a:focus {
 /* FULL FIX FOR ABOUT PAGE LAYOUT */
 .sub_page .hero_area {
   padding-top: 120px !important;  /* Push content below navbar */
-  background-color: #668642;
+  background-color: #ffffff;
 }
 
 .sub_page .about_section {
