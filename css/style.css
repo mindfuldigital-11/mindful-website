@@ -930,4 +930,176 @@ a:focus {
 .footer_section .footer-info p a {
   color: inherit;
 }
+/* ===========================
+   Overrides & Responsive Fixes
+   Paste this at the END of style.css
+   =========================== */
+
+/* 1) Ensure header stays fixed and visible (already present but re-assert) */
+.header_section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: #668642;
+  -webkit-backface-visibility: hidden; /* avoid subpixel flicker */
+  backface-visibility: hidden;
+}
+
+/* make sure hero doesn't hide behind header (adjust if header height differs) */
+.hero_area {
+  padding-top: 90px; /* reduce if header is smaller, increase if larger */
+}
+
+/* 2) Center navbar links consistently across pages */
+/* Use flexbox to center the nav list and keep the brand on left */
+.custom_nav-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Put brand at flex-start, nav in the center, toggler/search at the end */
+.custom_nav-container .navbar-brand {
+  order: 1;
+  margin-right: 0; /* remove unexpected spacing */
+  display: flex;
+  align-items: center;
+}
+
+/* Nav list placed in center */
+.custom_nav-container .navbar-nav {
+  order: 2;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ensure each nav-item stays inline and centered */
+.custom_nav-container .navbar-nav .nav-item {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Put search/toggler elements to the right */
+.custom_nav-container .form-inline,
+.custom_nav-container .navbar-toggler {
+  order: 3;
+}
+
+/* 3) Prevent unexpected centering overrides (force nav-link colors still work) */
+.custom_nav-container .navbar-nav .nav-link {
+  padding: 5px 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* 4) Footer alignment: left on desktop, centered on narrow screens */
+.footer_section .container {
+  text-align: left;
+}
+
+/* ensure footer columns align to top */
+.footer_section .row {
+  align-items: flex-start;
+}
+
+/* keep footer links left aligned on desktop */
+.footer_section .footer_links,
+.footer_section .footer_contact .contact_link_box {
+  justify-content: flex-start;
+}
+
+/* 5) Mobile responsive fixes (max-width 768px) */
+@media (max-width: 768px) {
+
+  /* make header padding smaller on mobile */
+  .header_section {
+    padding: 8px 0;
+  }
+
+  /* stack the custom nav items vertically in collapsed state */
+  .custom_nav-container {
+    gap: 8px;
+  }
+
+  /* Brand centered on mobile */
+  .custom_nav-container .navbar-brand {
+    order: 1;
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* When collapsed, make nav vertical and full width */
+  .custom_nav-container .navbar-collapse {
+    order: 3;
+    width: 100%;
+    background: #ffffff; /* ensures links readable when expanded */
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  }
+
+  .custom_nav-container .navbar-nav {
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .custom_nav-container .navbar-nav .nav-item {
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  .custom_nav-container .navbar-nav .nav-link {
+    text-align: center;
+    color: #000 !important; /* dark when menu background is white */
+    padding: 10px;
+    background: transparent;
+  }
+
+  /* Make toggler visible at right */
+  .custom_nav-container .navbar-toggler {
+    display: inline-flex;
+    margin-left: auto;
+    order: 2;
+  }
+
+  /* Hero & images responsive tweaks */
+  .hero_area {
+    padding-top: 70px;
+  }
+
+  .hero_area .hero_bg_box img {
+    object-fit: cover;
+    height: auto;
+  }
+
+  /* Footer becomes centered on mobile */
+  .footer_section .container {
+    text-align: center;
+  }
+
+  .footer_section .footer_links,
+  .footer_section .footer_contact .contact_link_box {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer_section .footer_social {
+    justify-content: center;
+  }
+}
+
+/* 6) Small screens further adjustments (optional) */
+@media (max-width: 480px) {
+  .navbar-brand span { font-size: 18px; }
+  .custom_nav-container .navbar-nav .nav-link { padding: 8px 10px; font-size: 14px; }
+  .hero_area { padding-top: 65px; }
+}
 /*# sourceMappingURL=style.css.map */
