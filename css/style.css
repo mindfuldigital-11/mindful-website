@@ -1278,3 +1278,34 @@ a:focus {
     background-color: #ffffff !important;
   }
 }
+/* FULL FIX FOR ABOUT PAGE LAYOUT */
+.sub_page .hero_area {
+  padding-top: 120px !important;  /* Push content below navbar */
+  background-color: #668642;
+}
+
+.sub_page .about_section {
+  padding-top: 40px !important;
+}
+
+.sub_page .about_section .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+  .sub_page .hero_area {
+    padding-top: 140px !important;
+  }
+
+  .about_section .row {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .about_section .img-box img {
+    width: 90% !important;
+  }
+}
