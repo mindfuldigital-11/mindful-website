@@ -1309,3 +1309,6 @@ a:focus {
     width: 90% !important;
   }
 }
+.hero_area{
+         padding-top: 0px !important;
+}
