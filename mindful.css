@@ -1477,6 +1477,13 @@ section {
 .footer-grid .legal-column { order: 2; }
 .footer-grid .quicklinks-column { order: 3; }
 .footer-grid .emergency-column { order: 4; }
+.center-image img {
+    width: 100%;
+    height: auto;
+    max-height: 280px;
+    object-fit: cover;
+    border-radius: 16px;
+}
 
 
 
