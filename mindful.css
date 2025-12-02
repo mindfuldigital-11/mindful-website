@@ -20,13 +20,13 @@ body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(
         135deg,
-        #668642 8%,
-        #99261c 15%,
+        #64962b 8%,
+        #cd7f0a 15%,
         #16213e 35%,
         #0f3460 50%,
         #533a7d 70%,
-        #88318b 85%,
-        #281976 100%
+        #135a23 85%,
+        #601f82 100%
     );
     min-height: 100vh;
     overflow-x: hidden;
@@ -727,7 +727,7 @@ button[type="submit"] {
 /* Floating WhatsApp Button */
 .float-whatsapp {
     position: fixed;
-    bottom: 100px;
+    bottom: 70px;
     right: 20px;
     width: 60px;
     height: 60px;
@@ -742,7 +742,7 @@ button[type="submit"] {
 /* Floating Call Button */
 .float-call {
     position: fixed;
-    bottom: 20px;
+    bottom: 150px;
     right: 20px;
     width: 60px;
     height: 60px;
@@ -1484,6 +1484,31 @@ section {
     object-fit: cover;
     border-radius: 16px;
 }
+.center-card.glass {
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+/* Mobile footer layout */
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr; /* stack vertically */
+        gap: 25px;
+    }
 
+    .footer-column {
+        text-align: left;   /* keep left aligned */
+        padding: 10px 5px;
+    }
+
+    .branding-header {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 12px;
+    }
+
+    .footer-logo {
+        height: 36px; /* slightly smaller for mobile */
+    }
+}
 
 
