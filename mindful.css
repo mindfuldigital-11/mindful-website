@@ -1466,6 +1466,17 @@ section {
 .footer-section a:hover {
     color: #d8e9ff !important; /* soft white-blue */
 }
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+/* Force correct ordering */
+.footer-grid .branding-column { order: 1; }
+.footer-grid .legal-column { order: 2; }
+.footer-grid .quicklinks-column { order: 3; }
+.footer-grid .emergency-column { order: 4; }
 
 
 
