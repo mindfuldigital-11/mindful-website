@@ -21,7 +21,7 @@ body {
     background: linear-gradient(
         135deg,
         #477414 8%,
-        #9b07d5 15%,
+        #a10971 15%,
         #16213e 35%,
         #0f3460 50%,
         #533a7d 70%,
@@ -1369,7 +1369,7 @@ section {
 }
 
 /* Crisis message */
-.footer-emergency {
+.footer-support {
     color: #ffbdbd;
     font-size: 14px;
     margin: 10px 0 15px;
@@ -1476,7 +1476,7 @@ section {
 .footer-grid .branding-column { order: 1; }
 .footer-grid .legal-column { order: 2; }
 .footer-grid .quicklinks-column { order: 3; }
-.footer-grid .emergency-column { order: 4; }
+.footer-grid .support-column { order: 4; }
 .center-image img {
     width: 100%;
     height: auto;
