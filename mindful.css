@@ -20,8 +20,8 @@ body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(
         135deg,
-        #477414d8 8%,
-        #ca0bd4d0 15%,
+        #33540e 10%,
+        #3c194fc9 13%,
         #16213e 35%,
         #0f3460 50%,
         #533a7d 70%,
@@ -1510,9 +1510,23 @@ section {
         height: 36px; /* slightly smaller for mobile */
     }
 }
-.nav-links a:hover {
-    background: rgba(0,0,0,0.4);
-    color: #fff;
+/* Make Feature Icons Match Service Avatars */
+.feature-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 15px auto;
+    border: 3px solid rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.feature-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* FULLY FIT, NO WHITE SPACE */
+}
 

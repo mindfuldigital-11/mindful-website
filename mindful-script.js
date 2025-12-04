@@ -115,12 +115,3 @@ let currentPage = 'home';
             }
         `;
         document.head.appendChild(fadeStyle);
-
-
-// === CLEAN NAV TOGGLE (ADDED BY CHATGPT) ===
-function toggleMenu() {
-    const menu = document.querySelector('.nav-links');
-    if (menu) {
-        menu.classList.toggle('open');
-    }
-}
