@@ -20,8 +20,8 @@ body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(
         135deg,
-        #477414 8%,
-        #660898 15%,
+        #477414d8 8%,
+        #ca0bd4d0 15%,
         #16213e 35%,
         #0f3460 50%,
         #533a7d 70%,
@@ -1509,6 +1509,10 @@ section {
     .footer-logo {
         height: 36px; /* slightly smaller for mobile */
     }
+}
+.nav-links a:hover {
+    background: rgba(0,0,0,0.4);
+    color: #fff;
 }
 
 
