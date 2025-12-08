@@ -1677,9 +1677,22 @@ section {
         padding: 0px !important;
     }
 }
+/* MAKE THE 4 ABOUT-SECTION TILES SMALLER (NO ZOOM) */
 @media (max-width: 768px) {
+
     .stat-card {
-        transform: scale(0.75) !important;
-        padding: 15px !important;
+        padding: 12px !important;        /* smaller tile box */
+        margin: 6px 0 !important;        /* tighter spacing */
+        border-radius: 14px !important;
+    }
+
+    .stat-number {
+        font-size: 22px !important;      /* smaller number icon */
+        margin-bottom: 4px !important;
+    }
+
+    .stat-label {
+        font-size: 12px !important;      /* smaller label text */
+        line-height: 1.3 !important;
     }
 }
