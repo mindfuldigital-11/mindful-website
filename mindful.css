@@ -1828,3 +1828,46 @@ section {
         line-height: 1.4 !important;
     }
 }
+/* MOBILE — FIX ALL SECTION GAPS */
+@media (max-width: 768px) {
+
+    /* Reduce default section padding */
+    section {
+        padding: 12px 0 !important;
+    }
+
+    /* Reduce heading spacing */
+    h2 {
+        margin-top: 0 !important;
+        margin-bottom: 16px !important;
+    }
+
+    /* Reduce spacing between cards/lists */
+    .feature-card,
+    .service-card,
+    .team-member,
+    .center-card,
+    .stat-card {
+        margin-bottom: 12px !important;
+    }
+
+    /* Fix large gaps inside centers section */
+    .centers-section {
+        padding: 20px 0 !important;
+    }
+
+    /* Fix gap above and below hero */
+    .hero {
+        padding: 16px 0 !important;
+    }
+
+    /* Fix gap above About text block */
+    .about-text {
+        margin-bottom: 12px !important;
+    }
+
+    /* Fix gap above stats block */
+    .stats {
+        margin-top: 12px !important;
+    }
+}
