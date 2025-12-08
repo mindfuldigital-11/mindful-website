@@ -1677,22 +1677,37 @@ section {
         padding: 0px !important;
     }
 }
-/* MAKE THE 4 ABOUT-SECTION TILES SMALLER (NO ZOOM) */
+/* MOBILE — FULLY ADJUSTABLE ABOUT SECTION 4 TILES */
 @media (max-width: 768px) {
 
-    .stat-card {
-        padding: 12px !important;        /* smaller tile box */
-        margin: 6px 0 !important;        /* tighter spacing */
-        border-radius: 14px !important;
+    /* Change grid layout (number of tiles per row) */
+    .stats {
+        display: grid !important;
+        gap: 12px !important;
+        padding: 0 10px !important;
     }
 
+    /* ADJUST TILE SIZE HERE */
+    .stat-card {
+        width: 100% !important;      /* you can set 90%, 80%, 150px if you want */
+        height: auto !important;     /* set fixed height like 90px if needed */
+        padding: 12px !important;    /* adjust thickness (8px, 15px, etc.) */
+        border-radius: 12px !important;
+        background: rgba(255,255,255,0.15) !important;
+        text-align: center !important;
+    }
+
+    /* ADJUST ICON NUMBER SIZE */
     .stat-number {
-        font-size: 22px !important;      /* smaller number icon */
+        font-size: 22px !important;  /* change to 18px or 28px */
+        line-height: 1.2 !important;
         margin-bottom: 4px !important;
     }
 
+    /* ADJUST LABEL TEXT SIZE */
     .stat-label {
-        font-size: 12px !important;      /* smaller label text */
+        font-size: 12px !important;  /* change to 10px or 14px */
         line-height: 1.3 !important;
     }
 }
+
