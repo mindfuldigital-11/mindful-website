@@ -1677,3 +1677,9 @@ section {
         padding: 12px !important;
     }
 }
+@media (max-width: 768px) {
+    .stat-card {
+        transform: scale(0.85) !important;
+        padding: 15px !important;
+    }
+}
