@@ -1731,7 +1731,7 @@ section {
 
     .stat-card {
         padding: 18px !important;
-        min-height: 150px !important;
+        min-height: 100px !important;
         text-align: center !important;
         border-radius: 14px !important;
     }
