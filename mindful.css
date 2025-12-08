@@ -1667,19 +1667,19 @@ section {
 
     /* ALL glass tiles */
     .glass {
-        transform: scale(0.92);            /* shrink tile */
+        transform: scale(0.90);            /* shrink tile */
         transform-origin: top center;      /* keeps it centered */
         margin-bottom: 0px !important;    /* spacing between tiles */
     }
 
     /* Optional: reduce padding so tile looks tighter */
     .glass {
-        padding: 12px !important;
+        padding: 0px !important;
     }
 }
 @media (max-width: 768px) {
     .stat-card {
-        transform: scale(0.85) !important;
+        transform: scale(0.75) !important;
         padding: 15px !important;
     }
 }
