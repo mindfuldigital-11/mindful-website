@@ -1544,170 +1544,287 @@ section {
 .footer-bottom a:hover {
     text-decoration: underline;
 }
-/* REAL FIX – allow cards to shrink on mobile */
-@media (max-width: 600px) {
+/* MOBILE FIX — TILE HEIGHT + FONT SIZE ADJUSTMENTS */
+@media (max-width: 768px) {
 
-  /* Why Choose Us tiles */
-  .features-grid {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) !important;
-    gap: 15px !important;
-  }
+    /* --- TILE SIZE (ALL SECTIONS) --- */
+    .glass {
+        padding: 26px !important;        /* Controls tile thickness */
+        min-height: 220px !important;    /* Make tiles visibly taller */
+        transform: none !important;      /* Prevent zoom on tap */
+        margin-bottom: 14px !important;  /* Good spacing between tiles */
+    }
 
-  .feature-card {
-    padding: 15px !important;
-  }
-
-  .feature-avatar {
-    width: 80px !important;
-    height: 80px !important;
-  }
-
-  .feature-avatar img {
-    object-fit: cover !important;
-  }
-
-  .feature-card h3 {
-    font-size: 16px !important;
-  }
-  .feature-card p {
-    font-size: 13px !important;
-  }
-
-
-
-  /* SERVICES */
-  .services-grid {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) !important;
-    gap: 20px !important;
-  }
-
-  .service-card {
-    padding: 18px !important;
-  }
-
-  .service-avatar {
-    width: 90px !important;
-    height: 90px !important;
-  }
-
-  .service-card h3 {
-    font-size: 17px !important;
-  }
-
-  .service-card p,
-  .service-card li {
-    font-size: 13px !important;
-  }
-}
-/* Perfect Mobile Fit for Hero Section */
-@media (max-width: 600px) {
-
-    .hero {
-        grid-template-columns: 1fr !important;
-        padding: 25px 15px !important;
-        gap: 15px !important;
+    /* Inner tile components */
+    .feature-card,
+    .service-card,
+    .team-member,
+    .center-card,
+    .stat-card {
+        padding: 20px !important;
+        min-height: 220px !important;    /* You can adjust this */
         text-align: center !important;
     }
 
-    .hero-image img {
-        width: 125% !important;
-        max-height: 260px !important;
-        object-fit: cover !important;
-        border-radius: 18px !important;
-    }
-
-    .hero-content h1 {
-        font-size: 25px !important;
-        line-height: 1.3 !important;
-        margin-bottom: 10px !important;
-        padding: 0 5px;
-    }
-
-    .hero-content p {
-        font-size: 18px !important;
-        line-height: 1.45 !important;
-        padding: 0 8px !important;
-        margin-bottom: 18px !important;
-    }
-
-    /* CTA Buttons — perfect mobile fit */
-    .cta-button {
-        display: block !important;
-        width: 100% !important;
-        text-align: center !important;
-        margin: 0 0 12px 0 !important;
-        padding: 12px !important;
-        font-size: 15px !important;
-    }
-
-    .hero-content div {
-        width: 100% !important;
-    }
-}
-/* MOBILE HEADLINE SIZE ONLY */
-@media (max-width: 600px) {
-
+    /* --- MOBILE FONT SIZES --- */
     h1 {
-        font-size: 30px !important;   /* Change this to your preference */
-        line-height: 1.25 !important;
+        font-size: 26px !important;
+        line-height: 1.3 !important;
     }
 
     h2 {
-        font-size: 26px !important;   /* Section titles like “Why Choose Us” */
+        font-size: 22px !important;
         line-height: 1.3 !important;
     }
 
     h3 {
-        font-size: 22px !important;   /* Card titles (services, team, features) */
+        font-size: 18px !important;
         line-height: 1.3 !important;
     }
-}
-/* UNIVERSAL TILE SHRINK ON MOBILE — ALL CARD TYPES */
-@media (max-width: 768px) {
 
-    /* ALL glass tiles */
-    .glass {
-        transform: scale(0.90);            /* shrink tile */
-        transform-origin: top center;      /* keeps it centered */
-        margin-bottom: 0px !important;    /* spacing between tiles */
-    }
-
-    /* Optional: reduce padding so tile looks tighter */
-    .glass {
-        padding: 0px !important;
+    p,
+    li,
+    .bio,
+    .role {
+        font-size: 14px !important;
+        line-height: 1.4 !important;
     }
 }
-/* MOBILE — FULLY ADJUSTABLE ABOUT SECTION 4 TILES */
+/* FIX SERVICES TILES ON MOBILE — STOP LISTING */
 @media (max-width: 768px) {
 
-    /* Change grid layout (number of tiles per row) */
-    .stats {
-        display: grid !important;
-        gap: 12px !important;
+    /* Make services grid display 2 tiles per row when possible */
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) !important;
+        gap: 16px !important;
         padding: 0 10px !important;
     }
 
-    /* ADJUST TILE SIZE HERE */
-    .stat-card {
-        width: 100% !important;      /* you can set 90%, 80%, 150px if you want */
-        height: auto !important;     /* set fixed height like 90px if needed */
-        padding: 12px !important;    /* adjust thickness (8px, 15px, etc.) */
-        border-radius: 12px !important;
-        background: rgba(255,255,255,0.15) !important;
+    /* Adjust service cards to look like proper tiles */
+    .service-card {
+        padding: 20px !important;
+        min-height: 200px !important;
         text-align: center !important;
     }
 
-    /* ADJUST ICON NUMBER SIZE */
+    /* SERVICE icons smaller so they fit well */
+    .service-avatar {
+        width: 100px !important;
+        height: 100px !important;
+        margin-bottom: 12px !important;
+    }
+
+    /* SERVICE titles font */
+    .service-card h3 {
+        font-size: 18px !important;
+    }
+
+    /* SERVICE description text */
+    .service-desc, 
+    .service-features li {
+        font-size: 13px !important;
+    }
+}
+/* FIX ALL TILE SECTIONS ON MOBILE — STOP LIST VIEW */
+@media (max-width: 768px) {
+
+    /* WHY CHOOSE US */
+    .features-grid {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)) !important;
+        gap: 16px !important;
+        padding: 0 10px !important;
+    }
+    .feature-card {
+        padding: 20px !important;
+        min-height: 200px !important;
+        text-align: center !important;
+    }
+    .feature-avatar {
+        width: 90px !important;
+        height: 90px !important;
+    }
+    .feature-card h3 {
+        font-size: 18px !important;
+    }
+    .feature-card p {
+        font-size: 13px !important;
+    }
+
+
+    /* SERVICES SECTION */
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) !important;
+        gap: 16px !important;
+        padding: 0 10px !important;
+    }
+    .service-card {
+        padding: 20px !important;
+        min-height: 220px !important;
+    }
+    .service-avatar {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+
+    /* TEAM SECTION */
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)) !important;
+        gap: 16px !important;
+        padding: 0 10px !important;
+    }
+    .team-member {
+        padding: 20px !important;
+        min-height: 240px !important;
+    }
+    .team-avatar {
+        width: 120px !important;
+        height: 120px !important;
+    }
+    .team-member h3 {
+        font-size: 18px !important;
+    }
+    .team-member .bio, 
+    .team-member .role {
+        font-size: 13px !important;
+    }
+}
+/* MOBILE FIX — HERO + ABOUT SECTIONS */
+@media (max-width: 768px) {
+
+
+    /* ----------------------------- */
+    /* ABOUT SECTION FIX  */
+    /* ----------------------------- */
+
+    .about-content {
+        grid-template-columns: 1fr !important;   /* stop 2-column listing */
+        gap: 20px !important;
+        padding: 0 10px !important;
+    }
+
+    .about-text {
+        padding: 20px !important;
+        text-align: center !important;
+    }
+
+    .about-text h2 {
+        font-size: 22px !important;
+    }
+
+    .about-text p {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+    }
+
+
+    /* ----------------------------- */
+    /* ABOUT STATS — MAKE THEM TILE STYLE, NOT LISTED */
+    /* ----------------------------- */
+
+    .stats {
+        display: grid !important;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
+        gap: 14px !important;
+        padding: 0 10px !important;
+    }
+
+    .stat-card {
+        padding: 18px !important;
+        min-height: 150px !important;
+        text-align: center !important;
+        border-radius: 14px !important;
+    }
+
     .stat-number {
-        font-size: 22px !important;  /* change to 18px or 28px */
-        line-height: 1.2 !important;
+        font-size: 22px !important;
         margin-bottom: 4px !important;
     }
 
-    /* ADJUST LABEL TEXT SIZE */
     .stat-label {
-        font-size: 12px !important;  /* change to 10px or 14px */
+        font-size: 12px !important;
         line-height: 1.3 !important;
     }
 }
+/* FIX HERO IMAGE & LAYOUT ON MOBILE */
+@media (max-width: 768px) {
 
+    /* Reset bad image scaling */
+    .hero-image img {
+        width: 100% !important;
+        height: auto !important;
+        max-height: 260px !important;
+        object-fit: cover !important;
+        border-radius: 16px !important;
+        display: block !important;
+        margin: 0 auto !important;
+    }
+
+    /* Fix hero container layout */
+    .hero {
+        grid-template-columns: 1fr !important;
+        padding: 20px 12px !important;
+        gap: 18px !important;
+        text-align: center !important;
+        width: 95% !important;
+        margin: 0 auto !important;
+    }
+
+    /* Hero text area */
+    .hero-content {
+        width: 100% !important;
+        padding: 0 10px !important;
+        text-align: center !important;
+    }
+
+    .hero-content h1 {
+        font-size: 26px !important;
+        line-height: 1.3 !important;
+    }
+
+    .hero-content p {
+        font-size: 14px !important;
+        line-height: 1.45 !important;
+    }
+}
+/* MOBILE — CENTER SECTION FIX (Wide images like HERO) */
+@media (max-width: 768px) {
+
+    /* Tile layout */
+    .center-card {
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: 20px !important;
+        gap: 18px !important;
+        width: 95% !important;
+        margin: 0 auto 18px auto !important;
+    }
+
+    /* WIDE IMAGE LIKE HERO */
+    .center-photo img {
+        width: 100% !important;          /* SAME AS HERO */
+        height: auto !important;
+        max-height: 260px !important;     /* SAME AS HERO (adjust if needed) */
+        object-fit: cover !important;
+        border-radius: 16px !important;
+        display: block !important;
+        margin: 0 auto !important;
+    }
+
+    /* Center details matching hero/about text style */
+    .center-details {
+        width: 100% !important;
+        padding: 0 10px !important;
+        text-align: center !important;
+    }
+
+    .center-details h3 {
+        font-size: 20px !important;
+        line-height: 1.3 !important;
+    }
+
+    .center-details p {
+        font-size: 14px !important;
+        line-height: 1.4 !important;
+    }
+}
