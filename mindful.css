@@ -1544,3 +1544,58 @@ section {
 .footer-bottom a:hover {
     text-decoration: underline;
 }
+/* REAL FIX – allow cards to shrink on mobile */
+@media (max-width: 600px) {
+
+  /* Why Choose Us tiles */
+  .features-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) !important;
+    gap: 15px !important;
+  }
+
+  .feature-card {
+    padding: 15px !important;
+  }
+
+  .feature-avatar {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .feature-avatar img {
+    object-fit: cover !important;
+  }
+
+  .feature-card h3 {
+    font-size: 16px !important;
+  }
+  .feature-card p {
+    font-size: 13px !important;
+  }
+
+
+
+  /* SERVICES */
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) !important;
+    gap: 20px !important;
+  }
+
+  .service-card {
+    padding: 18px !important;
+  }
+
+  .service-avatar {
+    width: 90px !important;
+    height: 90px !important;
+  }
+
+  .service-card h3 {
+    font-size: 17px !important;
+  }
+
+  .service-card p,
+  .service-card li {
+    font-size: 13px !important;
+  }
+}
