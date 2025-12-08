@@ -1662,14 +1662,18 @@ section {
         line-height: 1.3 !important;
     }
 }
-/* SHRINK ALL TILES ON MOBILE EXCEPT FOOTER */
+/* UNIVERSAL TILE SHRINK ON MOBILE — ALL CARD TYPES */
 @media (max-width: 768px) {
 
-    /* All glass tiles EXCEPT footer */
-    .glass:not(.footer-section):not(footer) {
+    /* ALL glass tiles */
+    .glass {
         transform: scale(0.92);            /* shrink tile */
-        transform-origin: top center;
-        margin-bottom: 0px !important;
-        padding: 55px !important;
+        transform-origin: top center;      /* keeps it centered */
+        margin-bottom: 0px !important;    /* spacing between tiles */
+    }
+
+    /* Optional: reduce padding so tile looks tighter */
+    .glass {
+        padding: 12px !important;
     }
 }
